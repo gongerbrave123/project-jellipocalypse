@@ -1,0 +1,111 @@
+/* Base */
+
+@font-face {
+  font-family: "CookieRun";
+  src: url("fonts/CookieRun Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "CookieRun", Arial, sans-serif;
+  background: #fff3d6;
+}
+
+
+/* HEADER */
+
+.site-header {
+  background: linear-gradient(#a66a3f, #7a4a25); /* wood style */
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+
+/* LOGO / TITLE */
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+/* NAV BUTTONS */
+
+.nav-buttons a {
+  text-decoration: none;
+  color: white;
+
+  background: #c48a55;
+
+  padding: 8px 14px;
+  margin-left: 8px;
+
+  border-radius: 8px;
+  border: 2px solid #5a3217;
+
+  transition: 0.2s;
+}
+
+.nav-buttons a:hover {
+  background: #e3a96d;
+  transform: scale(1.05);
+}
+
+
+/* MAIN */
+
+main {
+  padding: 20px;
+}
+
+/* CENTER IMAGES */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-row {
+    display: flex;           /* makes the children line up in a row */
+    gap: 0px;               /* space between images */
+    justify-content: center; /* center the images horizontally */
+    align-items: center;     /* vertical alignment if images are different heights */
+}
+
+.image-row img:nth-child(1) {
+    width: 150px;            /* size of each image */
+    height: 150px;
+    border-radius: 15px;     /* rounded corners */
+    object-fit: cover;       /* keeps image from stretching */
+}
+
+.image-row img:nth-child(2) {
+   width: 210px;            /* size of each image */
+   height: 210px;
+   border-radius: 15px;     /* rounded corners */
+   object-fit: cover;       /* keeps image from stretching */
+}
+
+
+
+#scroll-area {
+    text-align: center;
+    padding: 20px;
+}
+
+.spacer {
+    height: 1000px; /* creates a tall space to scroll through */
+}
+
+#secret {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}

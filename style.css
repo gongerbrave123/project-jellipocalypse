@@ -94,18 +94,65 @@ main {
 }
 
 
+/* LOGS LAYOUT */
 
-#scroll-area {
-    text-align: center;
-    padding: 20px;
+.logs-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  /* NEW */
+  align-items: flex-start; /* stop stretching */
 }
 
-.spacer {
-    height: 1000px; /* creates a tall space to scroll through */
+
+
+/* LOG BOX */
+
+.log-box {
+  flex: 1;
+  min-width: 250px;
+
+  background: white;
+  border: 4px solid #ffb347;
+  border-radius: 18px;
+
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+
+  /* FORCE SIZE */
+  max-height: 350px;
+  overflow-y: auto;
 }
 
-#secret {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+
+
+
+/* Older box color */
+
+.log-box.old {
+  border-color: #000000;
+}
+
+
+/* TITLE */
+
+.log-box h2 {
+  margin-top: 0;
+  color: #000000;
+}
+
+
+/* LOG ITEM */
+
+.log-item {
+  background: #fff8e6;
+
+  padding: 8px 10px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
 }

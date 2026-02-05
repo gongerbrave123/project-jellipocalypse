@@ -156,3 +156,34 @@ main {
 
   font-size: 14px;
 }
+
+
+.download-btn {
+  display: inline-block;
+
+  background: linear-gradient(#ffcf4a, #ff9f1a);
+  color: black;
+
+  padding: 10px 20px;   /* was bigger before */
+  font-size: 15px;     /* smaller text */
+  font-weight: bold;
+
+  border-radius: 12px; /* slightly less round */
+  text-decoration: none;
+
+  box-shadow: 0 4px 0 #cc7a00;
+  transition: 0.15s;
+}
+
+
+/* hover */
+.download-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #cc7a00;
+}
+
+/* click or download idfk */
+.download-btn:active{
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #cc7a00;
+}

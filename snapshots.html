@@ -1,0 +1,68 @@
+<head>
+    <title>Project Jellipocalypse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER-->
+     <header class="site-header"
+
+     <div class="logo"
+     Project Jellipocalypse
+     </div>
+
+    <nav class="nav-buttons">
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="download.html">Download</a>
+     <a href="logs.html">Update Logs</a>
+     <a href="credits.html">Credits</a>
+     <a href="arv.html">Archived Versions</a>
+     <a href="snapshots.html">Weekly Snapshots</a>
+
+
+
+    </nav>
+
+</header>
+
+<h1>Weekly Snapshots</h1>
+<p>Updated every Saturday. (Or maybe Sunday!!) <br><br> CLICK ON THE IMAGES TO GET A BETTER LOOK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+
+<div class="snapshot">
+
+  <div class="snapshot-box">
+    <img src="images/Screenshot 2026-02-14 150352.png">
+
+    <div class="snapshot-text">
+      <h2>Week 1</h2>
+      <p>
+        First snapshot! Nothing much to say here...
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".snapshot-box img").forEach(img => {
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+</script>

@@ -187,3 +187,78 @@ main {
   transform: translateY(2px);
   box-shadow: 0 2px 0 #cc7a00;
 }
+
+/* Outer wrapper controls left/right */
+.snapshot {
+  width: 100%;
+  display: flex;
+  margin: 80px 0;
+}
+
+/* The dark card */
+.snapshot-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+
+  max-width: 900px;
+}
+
+/* Image */
+.snapshot-box img {
+  width: 450px;
+  border-radius: 15px;
+}
+
+/* Text */
+.snapshot-text {
+  max-width: 400px;
+  color: white;
+}
+
+/* LEFT snapshots */
+.snapshot:nth-child(odd) {
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+/* RIGHT snapshots */
+.snapshot:nth-child(even) {
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.snapshot:nth-child(even) .snapshot-box {
+  flex-direction: row-reverse;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 80%;
+  border-radius: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
